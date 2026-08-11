@@ -5,7 +5,7 @@ import Billing from '../../components/Billing/Billing'
 import OrderSummary from "../../components/OrderSummary/OrderSummary";
 import "../../components/OrderSummary/OrderSummary.css"
 import React, { useState } from "react";
-import Banner from "../../components/Banner/BAnner";
+import Banner from "../../components/Banner/Banner";
 import Footer from "../../components/Footer/Footer";
 const Checkout = () => {
      const [formData, setFormData] = useState({
