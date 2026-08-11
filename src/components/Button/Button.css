@@ -1,0 +1,50 @@
+/* .pro-btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+   
+}
+.pro-btn button {
+    width: 245px;
+    height: 48px;
+    background-color: #FFFFFF;
+    color: #B88E2F;
+    border: 2px solid #B88E2F;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 16px;
+
+   
+}
+    
+*/
+
+
+.pro-btn {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 40px auto;
+  padding: 0;
+}
+
+.pro-btn button {
+  width: 245px;
+  height: 48px;
+
+  background-color: #ffffff;
+  color: #b88e2f;
+
+  border: 2px solid #b88e2f;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+
+  cursor: pointer;
+}

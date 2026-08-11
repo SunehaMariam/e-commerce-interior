@@ -1,0 +1,88 @@
+.shopFilter {
+  width: 100%;
+  height: 100px;
+  background: #f9f1e7;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.filterLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filterLeft span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.filterLeft p {
+  font-size: 16px;
+}
+
+.filterLeft img {
+  width: 22px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 20px;
+}
+
+.divider {
+  width: 2px;
+  height: 35px;
+  background: #9f9f9f;
+}
+
+.filterRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filterRight label {
+  font-size: 20px;
+}
+
+.filterRight input {
+  height: 55px;
+  border: none;
+  background: white;
+  color: #9f9f9f;
+  font-size: 18px;
+  padding: 0 18px;
+  outline: none;
+}
+
+.filterRight input:first-of-type {
+  width: 55px;
+  text-align: center;
+}
+
+.filterRight input:last-of-type {
+  width: 180px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .shopFilter {
+    flex-direction: column;
+    height: auto;
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .filterLeft,
+  .filterRight {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

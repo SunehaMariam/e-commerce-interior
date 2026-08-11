@@ -1,0 +1,288 @@
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
+}
+
+/* =========================
+   Logo
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 50px;
+  height: 32px;
+  display: block;
+}
+
+.Furniro{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 34px;
+    color: #000000;
+}
+/* =========================
+   Navigation Links
+========================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #b88e2f;
+}
+
+/* =========================
+   Icons
+========================= */
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-icons img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-icons img:hover {
+  transform: scale(1.1);
+}
+
+.nav-icons a {
+  display: flex;
+  align-items: center;
+}
+
+/* =========================
+   Hamburger
+========================= */
+
+.hamburger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  transition: 0.3s ease;
+}
+
+/* Hamburger animation */
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 1100px) {
+
+  .navbar {
+    padding: 0 4%;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .nav-icons {
+    gap: 16px;
+  }
+
+  .nav-icons img {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 80px;
+    padding: 0 5%;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  /* Show hamburger */
+
+  .hamburger {
+    display: flex;
+    order: 3;
+  }
+
+  /* Icons */
+
+  .nav-icons {
+    margin-left: auto;
+    margin-right: 5px;
+    gap: 15px;
+  }
+
+  .nav-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Mobile menu */
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0;
+
+    background-color: #ffffff;
+
+    padding: 0;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+  }
+
+  /* Open menu */
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 16px 0;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .nav-link:hover {
+    background-color: #fafafa;
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    height: 70px;
+    padding: 0 4%;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .nav-icons {
+    gap: 10px;
+  }
+
+  .nav-icons img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hamburger {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+  }
+
+  .hamburger span {
+    width: 23px;
+  }
+
+  .nav-links {
+    top: 70px;
+  }
+}

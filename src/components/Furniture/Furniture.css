@@ -1,0 +1,346 @@
+/* =========================
+   MAIN SECTION
+========================= */
+
+.furniture-section {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 10px;
+  background: #fff;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.furniture-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #3a3a3a;
+}
+
+.furniture-title small {
+  display: block;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #666;
+  margin-bottom: 2px;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.Furniture-gallery {
+  width: 1000px;
+  height: 500px;
+
+  margin: 0 auto;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* =========================
+   COMMON IMAGE
+========================= */
+
+.furniture-img {
+  position: absolute;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* =========================
+   LEFT SHELF
+========================= */
+
+.furniture-shelf {
+  left: 40px;
+  top: 0;
+
+  width: 62px;
+  height: 255px;
+}
+
+
+/* =========================
+   DESK
+========================= */
+
+.furniture-desk {
+  left: 110px;
+  top: 45px;
+
+  width: 300px;
+  height: 205px;
+}
+
+
+/* =========================
+   CHAIR
+========================= */
+
+.furniture-chair {
+  left: 40px;
+  top: 295px;
+
+  width: 130px;
+  height: 205px;
+}
+
+
+/* =========================
+   SIDE TABLES
+========================= */
+
+.furniture-stools {
+  left: 155px;
+  top: 265px;
+
+  width: 255px;
+  height: 195px;
+}
+
+
+/* =========================
+   DINING ROOM
+========================= */
+
+.furniture-dining {
+  left: 425px;
+  top: 100px;
+
+  width: 195px;
+  height: 290px;
+}
+
+
+/* =========================
+   BEDROOM
+========================= */
+
+.furniture-bedroom {
+  left: 630px;
+  top: 65px;
+
+  width: 190px;
+  height: 230px;
+}
+
+
+/* =========================
+   WALL FRAME
+========================= */
+
+.furniture-frame {
+  left: 630px;
+  top: 315px;
+
+  width: 115px;
+  height: 165px;
+}
+
+
+/* =========================
+   KITCHEN SHELF
+========================= */
+
+.furniture-entry {
+  left: 755px;
+  top: 315px;
+
+  width: 205px;
+  height: 165px;
+}
+
+
+/* =========================
+   RIGHT DINING CORNER
+========================= */
+
+.furniture-work {
+  left: 830px;
+  top: 15px;
+
+  width: 165px;
+  height: 280px;
+}
+
+
+/* =========================
+   LARGE SCREEN
+========================= */
+
+@media (min-width: 1200px) {
+
+  .Furniture-gallery {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+  }
+}
+
+
+/* =========================
+   EXTRA LARGE SCREEN
+========================= */
+
+@media (min-width: 1500px) {
+
+  .Furniture-gallery {
+    width: 1150px;
+    height: 550px;
+  }
+
+  .furniture-shelf {
+    left: 20px;
+  }
+
+  .furniture-desk {
+    left: 100px;
+  }
+
+  .furniture-chair {
+    left: 20px;
+  }
+
+  .furniture-stools {
+    left: 145px;
+  }
+
+  .furniture-dining {
+    left: 425px;
+  }
+
+  .furniture-bedroom {
+    left: 630px;
+  }
+
+  .furniture-frame {
+    left: 630px;
+  }
+
+  .furniture-entry {
+    left: 755px;
+  }
+
+  .furniture-work {
+    left: 830px;
+  }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+  .Furniture-gallery {
+    transform: scale(0.85);
+    transform-origin: top center;
+
+    margin-bottom: -75px;
+  }
+
+  .furniture-title {
+    font-size: 22px;
+  }
+
+  .furniture-title small {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================
+   SMALL TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+  .Furniture-gallery {
+    transform: scale(0.72);
+    transform-origin: top center;
+
+    margin-bottom: -140px;
+  }
+
+  .furniture-title {
+    font-size: 21px;
+  }
+
+  .furniture-title small {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .furniture-section {
+    padding-top: 8px;
+  }
+
+  .furniture-title {
+    font-size: 19px;
+  }
+
+  .furniture-title small {
+    font-size: 11px;
+  }
+
+  .Furniture-gallery {
+    width: 1000px;
+    height: 500px;
+
+    transform: scale(0.58);
+    transform-origin: top center;
+
+    margin-left: calc((100% - 1000px) / 2);
+    margin-bottom: -210px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .furniture-title {
+    font-size: 17px;
+  }
+
+  .furniture-title small {
+    font-size: 10px;
+  }
+
+  .Furniture-gallery {
+    transform: scale(0.48);
+    transform-origin: top center;
+
+    margin-left: calc((100% - 1000px) / 2);
+    margin-bottom: -260px;
+  }
+}
+

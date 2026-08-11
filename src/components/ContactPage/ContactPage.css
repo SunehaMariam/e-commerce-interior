@@ -1,0 +1,14 @@
+.contact h1 {
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.contact p{
+     font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: #9F9F9F;
+    text-align: center;
+}

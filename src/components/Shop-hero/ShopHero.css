@@ -1,0 +1,54 @@
+.shopHero {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent h1 {
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Poppins";
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.breadcrumb h2,
+.breadcrumb h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+
+.breadcrumb img {
+  width: 14px;
+  height: 14px;
+  color: #000;
+}
