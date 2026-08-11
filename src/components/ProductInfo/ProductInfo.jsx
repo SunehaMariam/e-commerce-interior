@@ -1,6 +1,6 @@
 
 import React from 'react'
-import "./productInfo.css"
+import "../ProductInfo/ProductInfo.css"
 import Sofa from "../../assets/images/Sofa.png"
 import { useLocation } from "react-router-dom"
 

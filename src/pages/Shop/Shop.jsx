@@ -8,7 +8,7 @@ import Product2 from "../../assets/images/Product2.png"
 import Shop3 from "../../assets/images/Shop3.png"
 import Shop4 from "../../assets/images/Shop4.png"
 import Pagination from '../../components/Pagination/Pagination'
-import Banner from '../../components/Banner/BAnner'
+import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
 const Shop = ({title,currpage}) => {
   return (
